@@ -1,0 +1,60 @@
+h3{
+    margin-top: 60px;
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a:link{
+    color: goldenrod;
+    text-decoration: none;
+}
+a:visited{
+    color: goldenrod;
+}
+a:hover, a:active, a:focus {
+    color: goldenrod;
+}
+body { 
+    font-family: sans-serif;
+    font-stretch: condensed;
+}
+a:link{
+    color: goldenrod;
+    text-decoration: none;
+}
+a:visited{
+    color: darkgoldenrod;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: midnightblue;
+  position: fixed;
+  width: 100%;
+    top: 0px;
+    
+}
+li {
+  float: left;
+ border-right: 5px solid goldenrod;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+.active {
+    background-color: midnightblue;
+}
+.container {
+    margin-left:auto;
+    margin-right:auto;
+}

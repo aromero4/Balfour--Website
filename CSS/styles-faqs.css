@@ -1,0 +1,90 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h3{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    border-bottom: solid;
+    border-bottom-color: midnightblue;
+    border-width: thick;
+    margin-right: 20px
+}
+p{
+    margin-left: 120px;
+    border-width: medium;
+    border: solid;
+    border-color: goldenrod;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    padding:20px;
+}
+a:link{
+    color: goldenrod;
+    text-decoration: none;
+}
+a:visited{
+    color: goldenrod;
+}
+a:hover, a:active, a:focus {
+    color: goldenrod;
+}
+body { 
+    font-family: sans-serif;
+    font-stretch: condensed;
+}
+a:link{
+    color: goldenrod;
+    text-decoration: none;
+}
+a:visited{
+    color: darkgoldenrod;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: midnightblue;
+  position: fixed;
+  width: 100%;
+    top: 0px;
+    
+}
+li {
+  float: left;
+ border-right: 5px solid goldenrod;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+.active {
+    background-color: midnightblue;
+}
+.container {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.title {
+    margin-left:auto;
+    margin-right: auto;
+    color: goldenrod;
+    background-color: midnightblue;
+    margin-left:0px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 70px;
+}
