@@ -9,9 +9,6 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 160px auto;
-  background-color: ;
-  margin-left: auto;
-  margin-right:auto;
 }
     /*faqs title css*/
 h1{
