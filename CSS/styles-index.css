@@ -1,13 +1,22 @@
-body { 
-    font-family: 'Oswald', sans-serif;
-    font-stretch: condensed;
+h1{
+    margin-top:60px
+        font-family: 'Oswald', sans-serif;
+
 }
+
 h3{
-    margin-top: 60px;
+       margin-top: 60px;
+    font-family: 'Oswald', sans-serif;
 }
-* {
+
+p{
+    font-family: 'Oswald', sans-serif;
+
+}
+{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 a:link{
     color: goldenrod;
@@ -19,7 +28,10 @@ a:visited{
 a:hover, a:active, a:focus {
     color: goldenrod;
 }
-
+body { 
+    font-family: sans-serif;
+    font-stretch: condensed;
+}
 a:link{
     color: goldenrod;
     text-decoration: none;
@@ -42,15 +54,49 @@ li {
 }
 
 li a {
-  display: flex;
+  display: block;
   text-align: center;
-  padding: 15.5px 20px;
+  padding: 18px 20px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
   background-color: green;
 }
-.bhslink {
-    border-left: 5px solid goldenrod;
+/*this affects the titles*/
+.heading{
+    display: flex;
+    justify-content: center;
+    color:black;
+    font-size: 25px;
+    padding: 2px;
+    border-bottom: solid;
+    border-bottom-color: midnightblue;
+    border-width: thick;
+    margin-right: 10px
+   
+}
+/*this affects the explanations of the topics*/
+.body{
+    display: flex;
+    justify-content: center;
+    color:black 
+}
+.active {
+    background-color: midnightblue;
+}
+.container {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*box around body*/
+.box{
+    border: 2px darkgoldenrod solid;
+    padding: 5px;
+    margin: 10px;
+}
+
+.h1 {
+    margin-top: 100px;
 }
