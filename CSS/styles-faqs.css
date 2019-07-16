@@ -1,3 +1,10 @@
+/*overarching body css*/
+body {
+    font-family: 'Oswald', sans-serif;
+}
+/*end of body*/
+
+/*title grid*/
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -5,18 +12,36 @@
   background-color: ;
   margin-left: auto;
   margin-right:auto;
-
 }
+    /*faqs title css*/
+h1{
+    color: goldenrod;
+    background-color: midnightblue;
+    margin-top:100px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    margin-right: 10%;
+    text-align: left;
+}
+    /*end of faqs title*/
+/*end of title grid*/
 
+/*body grid*/
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-    grid-column: span 2;
-    
+  grid-column: span 2;
 }
+/*end of body grid*/
+
+/*faqs title - header*/
 .header {
      grid-column: span 2;
 }
+/*end of header*/
+
+/*navigation css*/
 a:link{
     color: goldenrod;
     text-decoration: none;
@@ -33,25 +58,28 @@ ul {
   background-color: midnightblue;
   position: fixed;
   width: 100%;
-    top:-2%;
+  top:-2%;
 }
 li {
-  float: left;
+ float: left;
  border-right: 5px solid goldenrod;
-font-size: 100%;
+ font-size: 100%;
 }
-
 li a {
   display: flex;
   text-align: center;
-  padding: 18px 20px;
+  padding: 15.5px 20px;
   text-decoration: none;
-
 }
-
 li a:hover:not(.active) {
   background-color: green;
 }
+.bhslink {
+    border-left: 5px solid goldenrod;
+}
+/*end of navigation css*/
+
+/*question bar css*/
 h3{
     margin-top: auto;
     margin-bottom: auto;
@@ -62,6 +90,7 @@ h3{
     padding-bottom: 1%;
     margin-right: auto;
 }
+    /*answer bar css*/
 p{
    
     border-width: medium;
@@ -70,9 +99,10 @@ p{
     padding:20px;
     font-size: 100%
 }
-body {
-    font-family: 'Oswald', sans-serif;
-}
+    /*end of answer bar*/
+/*end of quesstion bar*/
+
+/*category bar css*/
 h2 {
     color: goldenrod;
     background-color: midnightblue;
@@ -83,16 +113,4 @@ h2 {
     margin-right:30%;
     
 }
-h1{
-    color: goldenrod;
-    background-color: midnightblue;
-    margin-top:100px;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 2%;
-    margin-right: 10%;
-    text-align: left;
-}
-.bhslink {
-    border-left: 5px solid goldenrod;
-}
+/*end of category bar*/
