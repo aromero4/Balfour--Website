@@ -1,27 +1,21 @@
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 160px auto;
+  background-color: ;
+  margin-left: auto;
+  margin-right:auto;
+
 }
-h3{
-    margin-top: 60px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    border-bottom: solid;
-    border-bottom-color: midnightblue;
-    border-width: thick;
-    margin-right: 20px
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+    grid-column: span 2;
+    
 }
-p{
-    margin-left: 120px;
-    border-width: medium;
-    border: solid;
-    border-color: goldenrod;
-    margin-bottom: 50px;
-    margin-right: 100px;
-    padding:20px;
+.header {
+     grid-column: span 2;
 }
 a:link{
     color: goldenrod;
@@ -33,60 +27,72 @@ a:visited{
 a:hover, a:active, a:focus {
     color: goldenrod;
 }
-body { 
-    font-family: sans-serif;
-    font-stretch: condensed;
-}
-a:link{
-    color: goldenrod;
-    text-decoration: none;
-}
-a:visited{
-    color: darkgoldenrod;
-}
 ul {
   list-style-type: none;
   overflow: hidden;
   background-color: midnightblue;
   position: fixed;
   width: 100%;
-    top: 0px;
-    
+    top:-2%;
 }
 li {
   float: left;
  border-right: 5px solid goldenrod;
+font-size: 100%;
 }
 
 li a {
-  display: block;
+  display: flex;
   text-align: center;
   padding: 18px 20px;
   text-decoration: none;
+
 }
 
 li a:hover:not(.active) {
   background-color: green;
 }
-.active {
-    background-color: midnightblue;
-}
-.container {
-    margin-left:auto;
-    margin-right:auto;
-}
-
-.title {
-    margin-left:auto;
+h3{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    border-bottom: solid;
+    border-bottom-color: midnightblue;
+    border-width: thick;
+    padding-bottom: 1%;
     margin-right: auto;
+}
+p{
+   
+    border-width: medium;
+    border: solid;
+    border-color: goldenrod;
+    padding:20px;
+    font-size: 100%
+}
+body {
+    font-family: 'Oswald', sans-serif;
+}
+h2 {
     color: goldenrod;
     background-color: midnightblue;
-    margin-left:0px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-right: 300px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 70px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left:1%; 
+    text-align: left;
+    margin-right:30%;
+    
+}
+h1{
+    color: goldenrod;
+    background-color: midnightblue;
+    margin-top:100px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    margin-right: 10%;
+    text-align: left;
+}
+.bhslink {
+    border-left: 5px solid goldenrod;
 }
