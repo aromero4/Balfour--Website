@@ -1,7 +1,6 @@
 h1{
     margin-top:60px
         font-family: 'Oswald', sans-serif;
-
 }
 
 h3{
@@ -100,3 +99,31 @@ li a:hover:not(.active) {
 .h1 {
     margin-top: 100px;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  grid-template-rows: 500px auto; 
+ 
+}
+.grid-item {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+   padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  
+}
+/*this affects the heading*/
+.banner{ 
+  grid-column:span 2;
+  background-color: white;
+   border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  text-align: center;
+    margin-top: 80px;
+    width:100%;
+  }
+
+
