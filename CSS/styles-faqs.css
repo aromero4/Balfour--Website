@@ -1,26 +1,45 @@
-* {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+/*overarching body css*/
+body {
+   font-family: 'Oswald', sans-serif;
+
 }
-h3{
-    margin-top: 60px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    border-bottom: solid;
-    border-bottom-color: midnightblue;
-    border-width: thick;
-    margin-right: 20px
+/*end of body*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns:repeat(2, lfr);
+grid-template-rows: auto;
 }
-p{
-    margin-left: 120px;
-    border-width: medium;
-    border: solid;
-    border-color: goldenrod;
-    margin-bottom: 50px;
-    margin-right: 100px;
-    padding:20px;
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px
+  text-align: center;
 }
+.image {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.bg-image {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Budget-1_notre_dame.jpg");
+  
+  height: 100%; 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0);
+    /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  width: 100%;
+  text-align: center;
+}
+/*navigation css*/
 a:link{
     color: goldenrod;
     text-decoration: none;
@@ -31,60 +50,63 @@ a:visited{
 a:hover, a:active, a:focus {
     color: goldenrod;
 }
-body { 
-    font-family: sans-serif;
-    font-stretch: condensed;
-}
-a:link{
-    color: goldenrod;
-    text-decoration: none;
-}
-a:visited{
-    color: darkgoldenrod;
-}
 ul {
   list-style-type: none;
   overflow: hidden;
   background-color: midnightblue;
   position: fixed;
   width: 100%;
-    top: 0px;
-    
+  top:-2%;
 }
 li {
-  float: left;
+ float: left;
  border-right: 5px solid goldenrod;
 }
-
 li a {
-  display: block;
+  display: flex;
   text-align: center;
-  padding: 18px 20px;
+  padding: 15.5px 20px;
   text-decoration: none;
 }
-
 li a:hover:not(.active) {
   background-color: green;
 }
-.active {
-    background-color: midnightblue;
+.bhslink {
+    border-left: 5px solid goldenrod;
 }
-.container {
-    margin-left:auto;
-    margin-right:auto;
+/*end of navigation css*/
+/*question bar css*/
+h3{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    border-bottom: solid;
+    border-bottom-color: midnightblue;
+    margin-right: 5%;
+    border-width: thick;
+    padding-bottom: 1%;
 }
+    /*answer bar css*/
+p{
+    border-width: medium;
+    border: solid;
+    border-color: goldenrod;
+    padding:20px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+    /*end of answer bar*/
+/*end of quesstion bar*/
 
-.title {
-    margin-left:auto;
-    margin-right: auto;
+/*category bar css*/
+h2 {
     color: goldenrod;
     background-color: midnightblue;
-    margin-left:0px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-right: 300px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 70px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left:1%; 
+    text-align: left;
+    margin-right:30%;
+    
 }
+/*end of category bar*/
