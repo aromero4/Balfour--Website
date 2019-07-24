@@ -125,6 +125,7 @@ iframe {
     width: 100%;
     max-width: 175px;
     box-sizing: border-box;
+/*
     background-color: midnightblue;
     padding: 20px;
     color: white;
@@ -132,6 +133,8 @@ iframe {
     margin-left: -175px;
     font-weight: 600
     
+*/
+
 }
 
 .toggle {

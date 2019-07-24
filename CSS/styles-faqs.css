@@ -1,43 +1,44 @@
 /*overarching body css*/
 body {
-    font-family: 'Oswald', sans-serif;
+   font-family: 'Oswald', sans-serif;
+
 }
 /*end of body*/
 
-/*title grid*/
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 160px auto;
+  grid-template-columns:repeat(2, lfr);
+grid-template-rows: auto;
 }
-    /*faqs title css*/
-h1{
-    color: goldenrod;
-    background-color: midnightblue;
-    margin-top:100px;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 2%;
-    margin-right: 10%;
-    text-align: left;
-}
-    /*end of faqs title*/
-/*end of title grid*/
-
-/*body grid*/
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px
   text-align: center;
-  grid-column: span 2;
 }
-/*end of body grid*/
-
-/*faqs title - header*/
-.header {
-     grid-column: span 2;
+.image {
+  border: 1px solid rgba(0, 0, 0, 0.8);
 }
-/*end of header*/
+.bg-image {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Budget-1_notre_dame.jpg");
+  
+  height: 100%; 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0);
+    /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  width: 100%;
+  text-align: center;
+}
 /*navigation css*/
 a:link{
     color: goldenrod;
@@ -60,7 +61,6 @@ ul {
 li {
  float: left;
  border-right: 5px solid goldenrod;
- font-size: 100%;
 }
 li a {
   display: flex;
@@ -75,26 +75,25 @@ li a:hover:not(.active) {
     border-left: 5px solid goldenrod;
 }
 /*end of navigation css*/
-
 /*question bar css*/
 h3{
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: auto;
+    margin-left: 5%;
     border-bottom: solid;
     border-bottom-color: midnightblue;
+    margin-right: 5%;
     border-width: thick;
     padding-bottom: 1%;
-    margin-right: auto;
 }
     /*answer bar css*/
 p{
-   
     border-width: medium;
     border: solid;
     border-color: goldenrod;
     padding:20px;
-    font-size: 100%
+    margin-right: 10%;
+    margin-left: 10%;
 }
     /*end of answer bar*/
 /*end of quesstion bar*/
