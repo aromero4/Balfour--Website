@@ -52,3 +52,4 @@ templates.js
 /private
 Dockerfile
 nginx.conf
+images/.DS_Store
