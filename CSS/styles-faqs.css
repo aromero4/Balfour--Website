@@ -1,0 +1,112 @@
+/*overarching body css*/
+body {
+   font-family: 'Oswald', sans-serif;
+
+}
+/*end of body*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns:repeat(2, lfr);
+grid-template-rows: auto;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px
+  text-align: center;
+}
+.image {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+.bg-image {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Budget-1_notre_dame.jpg");
+  
+  height: 100%; 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0);
+    /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  width: 100%;
+  text-align: center;
+}
+/*navigation css*/
+a:link{
+    color: goldenrod;
+    text-decoration: none;
+}
+a:visited{
+    color: goldenrod;
+}
+a:hover, a:active, a:focus {
+    color: goldenrod;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: midnightblue;
+  position: fixed;
+  width: 100%;
+  top:-2%;
+}
+li {
+ float: left;
+ border-right: 5px solid goldenrod;
+}
+li a {
+  display: flex;
+  text-align: center;
+  padding: 15.5px 20px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: green;
+}
+.bhslink {
+    border-left: 5px solid goldenrod;
+}
+/*end of navigation css*/
+/*question bar css*/
+h3{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5%;
+    border-bottom: solid;
+    border-bottom-color: midnightblue;
+    margin-right: 5%;
+    border-width: thick;
+    padding-bottom: 1%;
+}
+    /*answer bar css*/
+p{
+    border-width: medium;
+    border: solid;
+    border-color: goldenrod;
+    padding:20px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+    /*end of answer bar*/
+/*end of quesstion bar*/
+
+/*category bar css*/
+h2 {
+    color: goldenrod;
+    background-color: midnightblue;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left:1%; 
+    text-align: left;
+    margin-right:30%;
+    
+}
+/*end of category bar*/

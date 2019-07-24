@@ -1,0 +1,91 @@
+<!Doctype html>
+<!--ignore-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+    
+    return false;
+});
+</script>
+<!--ignore-->
+<html>
+    <head>
+<!--Tab Name-->
+        <title> Balfour-Hesburgh Scholars Program</title>
+        <link href="../CSS/styles-summerinstitute.css" type="text/css" rel="stylesheet"/>
+<!--End Tab Name-->
+    </head>
+    <body>
+        
+        <input type="checkbox" id="stoggle" name="" value="">
+        
+         <div class="pagewrap">
+
+             <label for="stoggle" class="toggle">☱</label>
+
+            <div id="pagecontent">
+            
+
+<!--End Navigation-->
+<!--Page Content-->
+        
+            <div id="page0">
+                <a id="PageName" class="smooth"></a>
+                <h1>Balfour-Hesburgh Summer Institute</h1>
+            </div>
+
+            <div id="page1">
+                <a id="Details" class="smooth"></a>
+                <h2>Details</h2>
+                <p>The BHSP Summer Institute at Notre Dame is designed to jump-start our Scholars’ transition to college life and their acculturation to the demanding academic environment of a top-20 university.</p>
+                <p> During this four-week residential experience, students complete a combination of academic coursework and personal development courses. They will be introduced to the vast resources Notre Dame offers, as well as the level of work that will be required in the fall.</p>
+                <h2>What</h2>
+                <p>Students will attend five classes during the week and various team building activities on the weekend, all aimed at both academic, social, and emotional growth</p>
+                <h2>Why</h2>
+                <p>The Summer Program will help prepare students for the college life, as well as provide a caring community from day one
+                </p>
+                <h2>How</h2>
+                <p>Balfour will coordinate travel and cover all costs (including summer tuition, housing and meals) to attend the Summer Institute.</p>
+                <h2>When</h2>
+                <p>Students will spend four weeks in dorms here at Notre Dame.
+    (June 28th - July 26th)</p>
+            </div>
+
+            <div id="page4">
+                <a id="Map" class="smooth">
+                 </a>
+                <h2>Interactive Campus Map</h2>
+                <p><iframe                            src="https://map.nd.edu/#/placemarks/1076/zoom/16/lat/41.70051990254726/lon/-86.23725771903992;output=embed"></iframe></p>
+
+            </div>
+            
+            <div id="page2">
+                <a id="ImportantInfo" class="smooth"></a>
+                <h2> Important Information </h2>
+                <p>
+                <iframe src="https://docs.google.com/document/d/1jRXwB9NRz6pj1A3h6OrjinE2pYoXrzM6-Kl100Kn1Nw/edit"></iframe>
+                </p>
+            </div>
+            
+            <div id="page5">
+                <a id="DiningHours" class="smooth"></a>
+                <h2> Dining Hours </h2>
+                <p><iframe src="https://dining.nd.edu/assets/322132/summer_19.pdf"></iframe></p>
+            </div>
+        
+        
+            <div id="sidebar">
+                <p><a href="#PageName">Summer Institute</a></p>
+                <p><a href="#Details">Details</a></p>
+                <p><a href="#Map">Campus Map</a></p>
+                <p><a href="#DiningHours">Dining Hours</a></p>
+            </div>
+         </div>
+        </div>
+    </body>
+</html>

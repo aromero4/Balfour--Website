@@ -1,0 +1,150 @@
+html, body{
+    background-color: darkgoldenrod;
+    margin: 10px
+}
+/*body css start*/
+.container {
+    font-family: 'Oswald', sans-serif;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    align-content: center;
+    color: darkblue;
+}
+
+.Heading  {
+    border: 5px white solid;
+    padding: 5px;
+    margin: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 2em;
+    color: darkblue;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.container > div {
+    display: grid;
+    justify-content: center  
+}
+.container > div:nth-child(2n) {
+    width: auto
+      
+}
+ 
+<style>
+.map {
+    align-content: center;
+    position: center;
+    padding-top: 75%;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe{
+    align-content: center;
+    line-height: 2em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1;
+}
+
+</style>
+.DiningHall{
+    justify-content: center;
+}
+.DiningHall iframe{
+    margin-top: 20px;
+    align-content: center;
+       align-content: center;
+    line-height: 2em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1
+}
+.MapName{
+    font-size: em;
+    color: darkblue;
+
+}
+
+/*body css end*/
+h3{
+    margin-top: 60px;
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a:link{
+    color: goldenrod;
+    text-decoration: none;
+}
+a:visited{
+    color: goldenrod;
+}
+a:hover, a:active, a:focus {
+    color: goldenrod;
+}
+body { 
+    font-family: sans-serif;
+    font-stretch: condensed;
+}
+a:link{
+    color: goldenrod;
+    text-decoration: none;
+}
+a:visited{
+    color: darkgoldenrod;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: midnightblue;
+  position: fixed;
+  width: 100%;
+    top: 0px;
+    
+}
+li {
+  float: left;
+ border-right: 5px solid goldenrod;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: green;
+}
+.active {
+    background-color: midnightblue;
+}
+.container {
+    margin-left:auto;
+    margin-right:auto;
+}
+.title {
+    margin-left:auto;
+    margin-right: auto;
+    color: goldenrod;
+    background-color: midnightblue;
+    margin-left:0px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 70px;
+}
