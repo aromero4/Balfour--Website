@@ -1,5 +1,5 @@
 h1{
-    margin-top:60px
+    margin-top:60px;
         font-family: 'Oswald', sans-serif;
 }
 
@@ -28,7 +28,7 @@ a:hover, a:active, a:focus {
     color: goldenrod;
 }
 body { 
-    font-family: sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-stretch: condensed;
 }
 a:link{
@@ -36,7 +36,10 @@ a:link{
     text-decoration: none;
 }
 a:visited{
-    color: darkgoldenrod;
+    color: goldenrod;
+}
+a:hover, a:active, a:focus {
+    color: goldenrod;
 }
 ul {
   list-style-type: none;
@@ -44,7 +47,7 @@ ul {
   background-color: midnightblue;
   position: fixed;
   width: 100%;
-    top: 0px;
+    top: -2%;
     
 }
 li {
@@ -55,13 +58,17 @@ li {
 li a {
   display: block;
   text-align: center;
-  padding: 18px 20px;
+  padding: 15.5px 20px;
   text-decoration: none;
 }
 
 li a:hover:not(.active) {
   background-color: green;
 }
+.bhslink {
+    border-left: 5px solid goldenrod;
+}
+
 /*this affects the titles*/
 .heading{
     display: flex;
